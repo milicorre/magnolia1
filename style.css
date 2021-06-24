@@ -1,0 +1,407 @@
+*{
+    margin: 0; 
+    padding: 0; 
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/*Seccion portada img-tex*/
+.portada {
+    padding: 5px 5px;
+    width: 100%;
+    background-color:black; 
+    z-index: 25;
+    text-align: center;
+}
+.contenedorLogoMenu {
+    display: flex; 
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #000;
+    max-width: 1050px;
+    margin: auto;    
+}
+.logo{
+    padding: 10px 10px;
+    margin: 10px 10px;      
+    position: relative;   
+}
+ h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-style: oblique;
+}
+ /*seccion MENU*/
+.menuWeb{  
+     padding: 10px 10px;    
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    line-height: 40px;         
+}
+.menu li a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none; 
+    color: rgb(26, 24, 27);
+    padding: 0px 15px;   
+    display: block;      
+}
+.subMenu {
+    background-color:rgba(249, 230, 255, 0.74) ;
+    z-index: 200;
+    border-radius: 5px;   
+    position: absolute;
+    display:none; 
+}
+.subMenu li a{
+    padding: 0px 15px;
+}  
+.menu ul li {
+    display: block;
+}
+.menu li:hover ul{
+    display: block;
+}
+.menu li a:hover {
+    color: rgb(233, 151, 222);  
+}
+/*Menu Mobile */         
+.menuResponsive{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(206, 141, 235, 0.685);
+    text-align: right;  
+}
+.menuMobie-buttonConteiner{
+    width: 100%;    
+}
+.menuMobile-button{
+    padding: 5px 20px;     
+}
+.menuMobile li{
+    list-style: none;    
+}
+.menuMobile li a{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none; 
+    color: rgb(26, 24, 27);
+    padding: 10px 15px;
+}
+.subMenuMobile{
+    display: none;
+}
+.subMenuMobile:hover{
+    color: rgb(71, 34, 139);
+}
+
+/*seccion SERVICIO 3 */
+.serviciosContenedor1{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin: auto;
+    max-width: 1050px;
+}
+.secServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center; 
+}
+.divServ{
+    background-color:#fff;
+    width: 300px;
+    height: 410px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin: 0 10px 30px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 1px 1px 11px 6px rgba(238,212,247,0.75);          
+} 
+.divServ:hover {
+    transform: scale(1.15);
+    transition: all 0.5s;
+}
+.divServ img{
+    align-items: center;
+    border-radius: 10px;
+}
+.serviciosTitulo {
+    font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color:black;  
+}
+.serviciosTitulo:hover {
+    color: rgb(146, 110, 150);
+}
+.serviciosTitulo h3{
+    font-family: 'Yellowtail', cursive;
+    font-weight: lighter;  
+}
+.listadoServ li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    list-style: none;
+    list-style-position: inside;
+    text-align: center;
+}
+/*seccion productos recomendados*/
+.secProductos {
+    max-width: 1050px;
+    margin: auto;
+    border-top:solid 0.5px #000 ;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    color: black;
+    font-size: 20px;         
+}
+.producImag{
+    padding: 30px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.producImag img{
+   padding: 0px 10px;
+}
+.secProductos p{
+    text-align: end;
+}    
+/*seccion sobre MI*/
+.secSobrefr-contenedor {
+    background-image: url(Imagenes/fondo\ rosa.jpg);
+    background-size: cover;
+    max-width: 1050px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top:solid 0.5px #000 ;
+    display: flex;
+    flex-direction: row-reverse;  
+}
+.secSobrefr-contenedor h2{
+    display: none;
+}
+.secSobrefr-contenedor img{
+    border-radius: 50%;
+    padding: 0 10px;
+}
+.secSobrefr-contenedor p{
+    color:#000;
+    padding: 0px 20px; 
+    text-align: left;
+    text-indent: 20px;
+    font-size: 18px;        
+}
+.footer {
+    background-image: linear-gradient(to bottom, #fff, #000);
+    margin-top: 20px;
+    padding-top: 10px;          
+}
+.contacto{
+    max-width: 1050px;
+    height: 200px;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; 
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: initial;
+    font-size: 15px;  
+}
+.contacto h2{
+    padding-bottom: 15px;
+}
+.contacto ul li{
+    padding-top: 10px;
+}
+.contacto ul li a{
+    text-decoration: none;
+    color: #fff;   
+}
+/*makeup.html*/
+.contenedorMakeup{
+    max-width: 1050px;
+    margin:100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*pestañas.html*/
+.contenedorPestañas{
+    max-width: 1050px;
+    background-color: #fff;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-column-gap: 10px ;
+    grid-row-gap: 10px;
+}
+.contenedor-detalleServicio h2{
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contenedor-detalleServicio p{
+    padding: 0px 5px;
+    text-indent: 20px;
+    font-size: 20px;
+    max-width: 325px;
+    margin: auto;
+}
+.contenedorVideo{
+    max-width: 1050px;
+    margin: 20px auto;    
+}
+/*cejas.html*/
+.contenedorCejas{
+    max-width: 1050px;
+    background-color: #fff;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px ;
+    grid-row-gap: 10px;
+}
+/*trabajos.html*/
+.contenedor-trabajos{
+    max-width: 1050px;
+    margin: auto;
+    box-sizing: content-box;
+    padding: 40px 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 350px);
+    grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto5 foto6"
+    "foto7 foto8 foto9";
+}
+.contenedor-trabajos img:hover{
+    transform: scale(1.3);
+}
+.fototrabajo1{
+    grid-area: foto1;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo2{
+    grid-area: foto2;
+   border-radius: 5px;
+   width: 300px;
+   height: 300px;
+   transition: all 1s;
+}
+.fototrabajo3{
+    grid-area: foto3;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo4{
+    grid-area: foto4;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo5{
+    grid-area: foto5;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo6{
+    grid-area: foto6;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo7{
+    grid-area: foto7;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo8{
+    grid-area: foto8;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+.fototrabajo9{
+    grid-area: foto9;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    transition: all 1s;
+}
+/* celu*/
+@media only screen and (max-width:480px ){
+    body {
+        background-color: chartreuse;
+    }
+    .portada{
+        display: none;
+    }
+   .menuWeb{
+       display: none;
+   }
+   .menuResponsive{
+       display:block;
+   }
+   nav{
+       height: 40px;
+       width: 100%;
+   }
+   .secProductos{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+   }
+  
+}
+/*tablet*/
+@media only screen and (min-width:481px) and (max-width:1024px) {
+    body {
+     background-color: darkorange; 
+    }
+    header{
+        display:flex; 
+        flex-direction: row;
+        justify-content: center;
+        width: 1024px;
+    }
+}
